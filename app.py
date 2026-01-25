@@ -19,11 +19,6 @@ def finalizar_app():
     os.system('clear')
     print('Finalizando o app.\n')
 
-def main():
-    exibir_nome_do_app()
-    menu_prinpical()
-    escolher_opcao()
-
 def escolher_opcao():
     # Conversão de tipo de string para inteiro usando int()
     opcao_escolhida = int(input('Escolha uma opção: '))
@@ -38,6 +33,11 @@ def escolher_opcao():
         print('Ativar restaurante')
     else:
         finalizar_app()
+
+def main():
+    exibir_nome_do_app()
+    menu_prinpical()
+    escolher_opcao()
 
 if __name__ == '__main__':
     main()

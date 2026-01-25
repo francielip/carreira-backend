@@ -52,8 +52,9 @@ O camelCase é muito usado no JavaScript, onde a primeira letra da primeira pala
 Interpolar um texto com variáveis usando f-string.
 
 02. Módulos e funções
-If, Elif e Else
-Funções: é um bloco de código, que vai realizar uma determinada ação.
-Import de bibliotecas
+Condicionais If Elif Else
+Criando funções e fazendo import:
+- Funções: é um bloco de código, que vai realizar uma determinada ação.
+- Import de bibliotecas
 Quando pedimos para que um programa Python seja executado, o interpretador cria uma variável chamada __name__. Se o __name__ for __main__ (principal, em inglês), significa que esse código não será importado por outros scripts de código Python, e ele será o programa principal.
 Instrução Match
