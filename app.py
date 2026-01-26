@@ -2,7 +2,12 @@
 import os
 
 # Criação da lista de restaurantes
-restaurantes = ['Casa do Pão','Espetinhos do João','Sucos da Vale']
+# restaurantes = ['Casa do Pão','Espetinhos do João','Sucos da Vale']
+
+# Criação de dicionário de restaurantes
+restaurantes = [{'nome':'Casa do Pão','categoria':'Japonesa','ativo':False},
+                {'nome':'Espetinhos do João','categoria':'Brasileira','ativo':True}
+                {'nome':'Sucos da Vale','categoria':'Natural','ativo':False}]
 
 # Criando funções com def
 def exibir_nome_do_app():
