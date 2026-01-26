@@ -60,4 +60,9 @@ Instrução Match
 
 **03. Listas, laços e exceções**
 Try except
-Listas
+Listas x Tuplas
+Laços de repetição com For While
+Refatoração do código
+Dicionários
+
+
