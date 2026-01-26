@@ -58,3 +58,7 @@ Criando funções e fazendo import:
 - Import de bibliotecas
 Quando pedimos para que um programa Python seja executado, o interpretador cria uma variável chamada __name__. Se o __name__ for __main__ (principal, em inglês), significa que esse código não será importado por outros scripts de código Python, e ele será o programa principal.
 Instrução Match
+
+03. Listas, laços e exceções
+Try except
+Listas
