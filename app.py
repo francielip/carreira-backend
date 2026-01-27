@@ -19,7 +19,7 @@ def exibir_nome_do_app():
 def menu_prinpical():
     print('1. Cadastrar restaurante')
     print('2. Listar restaurantes')
-    print('3. Ativar restaurante')
+    print('3. Alternar estado restaurante')
     print('4. Sair\n')
     # Quebra de linha usando \n
 
@@ -32,7 +32,10 @@ def voltar_ao_menu_principal():
 
 def exibir_subtitulo(texto):
     os.system('clear')
+    linha = '*' * (len(texto) + 1)
+    print(linha)
     print(texto)
+    print(linha)
     print()
 
 def opcao_invalida():
@@ -42,20 +45,45 @@ def opcao_invalida():
 def cadastrar_novo_restaurante():
     exibir_subtitulo('Cadastro de novos restaurantes')
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
-    
+    categoria = input(f'Digite o nome da categoria do restaurante {nome_do_restaurante}: ')
+    # Uma das regras de negócio é todo novo restaurante estar como ativo = False
+    dados_do_restaurante = {'nome':nome_do_restaurante,'categoria':categoria,'ativo':False}
     # Para adicionar o restaurante à lista, usamos append
-    restaurantes.append(nome_do_restaurante)
+    restaurantes.append(dados_do_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso.')
     voltar_ao_menu_principal()
 
 def listar_restaurantes():
     exibir_subtitulo('Listando os restaurantes cadastrados')
+    print(f'{'Nome do Restaurante'.ljust(22)} | {'Categoria'.ljust(20)} | Status')
     # Estrutura de repetição com for
     for restaurante in restaurantes:
         nome_restaurante = restaurante['nome']
-        categoria_restaurante = restaurante['categoria']
-        status_restaurante = restaurante['ativo']
-        print(f'- {nome_restaurante} | {categoria_restaurante} | {status_restaurante}')
+        categoria = restaurante['categoria']
+        # Ternário
+        ativo = 'ativado' if restaurante['ativo'] else 'desativado'
+        # Identação com ljust
+        print(f'- {nome_restaurante.ljust(20)} | {categoria.ljust(20)} | {ativo}')
+    voltar_ao_menu_principal()
+
+def alternar_estado_restaurante():
+    exibir_subtitulo('Alternando o estado do restaurante')
+    nome_restaurante = input('Digite o nome do restaurante que deseja alternar o estado: ')
+    # Ainda não encontrei o restaurante, ele inicia como Falso
+    restaurante_encontrado = False
+    # Para cada restaurante dentro do dicionário
+    for restaurante in restaurantes:
+        # Se o nome do restaurante foi encontrado...
+        if nome_restaurante == restaurante['nome']:
+            restaurante_encontrado = True
+            # Inverte o estado
+            restaurante['ativo'] = not restaurante['ativo']
+            # Ternário
+            mensagem = f'O restaurante {nome_restaurante} foi ativado com sucesso.' if restaurante['ativo'] else f'O restaurante {nome_restaurante} foi desativado com sucesso.'
+            print(mensagem)
+    if not restaurante_encontrado:
+        print('O restaurante não foi encontrado.')
+
     voltar_ao_menu_principal()
 
 def escolher_opcao():
@@ -71,7 +99,7 @@ def escolher_opcao():
         elif opcao_escolhida == 2:
             listar_restaurantes()
         elif opcao_escolhida == 3:
-            print('Ativar restaurante')
+            alternar_estado_restaurante()
         elif opcao_escolhida == 4:
             finalizar_app()
         else:
