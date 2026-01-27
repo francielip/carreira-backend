@@ -6,7 +6,7 @@ import os
 
 # Criação de dicionário de restaurantes
 restaurantes = [{'nome':'Casa do Pão','categoria':'Japonesa','ativo':False},
-                {'nome':'Espetinhos do João','categoria':'Brasileira','ativo':True}
+                {'nome':'Espetinhos do João','categoria':'Brasileira','ativo':True},
                 {'nome':'Sucos da Vale','categoria':'Natural','ativo':False}]
 
 # Criando funções com def
@@ -42,6 +42,7 @@ def opcao_invalida():
 def cadastrar_novo_restaurante():
     exibir_subtitulo('Cadastro de novos restaurantes')
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
+    
     # Para adicionar o restaurante à lista, usamos append
     restaurantes.append(nome_do_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso.')
@@ -51,7 +52,10 @@ def listar_restaurantes():
     exibir_subtitulo('Listando os restaurantes cadastrados')
     # Estrutura de repetição com for
     for restaurante in restaurantes:
-        print(f'- {restaurante}')
+        nome_restaurante = restaurante['nome']
+        categoria_restaurante = restaurante['categoria']
+        status_restaurante = restaurante['ativo']
+        print(f'- {nome_restaurante} | {categoria_restaurante} | {status_restaurante}')
     voltar_ao_menu_principal()
 
 def escolher_opcao():
