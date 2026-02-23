@@ -8,6 +8,9 @@ def menu_prinpical():
     print('5. Exercício 05 - Reorganizando uma lista de convidados')
     print('6. Exercício 06 - Ordenando os eventos')
     print('7. Exercício 07 - Corrigindo posições na lista de uma corrida de atletismo')
+    print('8. Exercício 08 - Removendo o último item de um pedido')
+    print('9. Exercício 09 - Calculando a média de notas')
+    print('10. Exercício 10 - Registrando dados de alunos')
 
 def exercicio_01():
     lista = ("Pão","Leite","Água")
@@ -23,7 +26,6 @@ def exercicio_02():
     print(f'Notas originais: {notas}')
     notas.sort()
     print(f'Notas ordenadas: {notas}')
-
 
 def exercicio_03():
     # Dessa forma, eu aceitaria somente um voluntário, não é isso que queremos no exercício
@@ -79,6 +81,26 @@ def exercicio_07():
     else:
         print("Nome não encontrado.")
 
+def exercicio_08():
+    pedidos = input("Pedidos feitos (separados por vírgula): ").split(", ")
+    pedidos.pop()
+    print("Pedidos finais:")
+    print(pedidos)
+
+def exercicio_09():
+    notas = input("Digite as notas dos alunos separadas por vírgula: ").split(",")
+    notas = [float(nota.strip()) for nota in notas]
+    media = sum(notas) / len(notas)
+    print(f"Média final da turma: {media:.2f}")
+
+def exercicio_10():
+    dados = input("Digite os dados do aluno no formato Nome, Idade, Nota separados por vírgula: ").split(", ")
+    for i in range(0, len(dados), 3):
+        nome, idade, nota = dados[i], int(dados[i + 1]), float(dados[i + 2])
+        print(f"Aluno: {nome}")
+        print(f"Idade: {idade}")
+        print(f"Nota: {nota}\n")
+
 
 def escolher_exercicio():
     opcao_escolhida = int(input('Escolha uma opção: '))
@@ -96,6 +118,12 @@ def escolher_exercicio():
         exercicio_06()
     if opcao_escolhida == 7:
         exercicio_07()
+    if opcao_escolhida == 8:
+        exercicio_08()
+    if opcao_escolhida == 9:
+        exercicio_09()
+    if opcao_escolhida == 10:
+        exercicio_10()
 
 def main():
     menu_prinpical()
