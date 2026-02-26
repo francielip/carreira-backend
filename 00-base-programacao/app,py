@@ -1,0 +1,11 @@
+import streamlit as st
+
+st.title('Cafeteria Doce Sabor')
+
+def consultar_item(item,estoque):
+    if item in estoque:
+        return True
+    else:
+        return False
+
+st.session_state
