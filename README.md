@@ -1,68 +1,57 @@
-## Carreira Back-End
-Espaço destinado aos projetos relacionados à trilha carreira "Desenvolvimento Back-End Python" da Alura.
-Nessa trilha, vamos desenvolver um aplicativo de entrega de comida.
+## 🏁 Checklist de Progresso: Carreira Back-End Python
 
-### Pensamento computacional: fundamentos da computação e lógica de programação
+### 00 - Base de Programação
+- [x] **Pensamento Computacional:** Fundamentos e Lógica
+- [x] **Python:** Crie a sua primeira aplicação
+- [x] **Praticando Python:** Condicionais (if, elif, else)
+- [x] **Praticando Python:** Laços (for e while)
+- [x] **Praticando Python:** Funções
 
-**01. Mundo da Computação**
-Computar significa processar alguma informação.
-Dados de entrada > processamento > dados de saída.
-Operações lógicas e aritméticas.
-Hardware X Software
-Back-end x Front-end x Banco de Dados
-Pensamento computacional >>> organizar as sequências de instruções.
+### 01 - Nível 1: Desenvolvimento Back-End
+- [x] **Git e GitHub:** Compartilhando e colaborando
+- [x] **Praticando Python:** Trabalhando com projetos
+- [x] **Python:** Aplicando a Orientação a Objetos
+- [x] **Praticando Python:** Listas e Tuplas
+- [ ] **Python:** Avance na OO e Consuma API (Em andamento...)
+- [ ] **Praticando Python:** Conjuntos e Dicionários
+- [ ] **Redes e Protocolos:** Fundamentos da Web
+- [ ] **Python:** Persistência, Bancos de Dados e APIs REST
+- [ ] **Praticando Python:** Strings e Regex
+- [ ] **Flask:** APIs e Web com MongoDB
+- [ ] **Django:** Templates e boas práticas
+- [ ] **Django:** Persistência e Admin
+- [ ] **Django:** Autenticação de formulários
+- [ ] **Django:** Autenticação com OAuth2.0
+- [ ] **FastAPI:** APIs assíncronas
+- [ ] **Metodologias Ágeis e DevOps**
+- [ ] **Python:** Fundamentos e Padrões de Arquitetura
+- [ ] **Princípios SOLID com Python**
 
-**02. Explorando o pensamento computacional**
-Decomposição de problemas
-Padrões e Reutilização 
-Abstração
+### 02 - Nível 2: Intermediário
+- [ ] **Django REST Framework:** Construindo APIs
+- [ ] **Django REST:** Permissões, Deploy AWS e CORS
+- [ ] **Django REST:** Validações, filtros e versionamento
+- [ ] **Django REST:** Testes unitários e integração
+- [ ] **Swagger:** Documentação de APIs
+- [ ] **Python:** Testes automatizados e qualidade
+- [ ] **Design Patterns em Python**
+- [ ] **Microsserviços em Python:** Comunicação e resiliência
+- [ ] **Integração Contínua:** Docker e GitHub Actions
+- [ ] **Integração Contínua:** Deploy na EC2
+- [ ] **Integração Contínua:** Amazon ECS
+- [ ] **Integração Contínua:** Rollback e teste de carga
+- [ ] **Python e OWASP:** Segurança e vulnerabilidades
 
-**03. Resolvendo problemas**
-Elaborando algoritmos
-Dados de entrada
-Decisão e repetição
-
-**04. Lógica de Programação**
-Variáveis
-Operadores
-Expressões lógicas
-Funções
-
-**05. Mundo da Programação**
-Linguagens de programação
-Ambientes de desenvolvimento
-Linguagens de alto e baixo nível
-Compiladores x Interpretadores
-Ciclos de desenvolvimento
-Debbuging e refatoramento
-
-### Python: crie a sua primeira aplicação
-
-**01. Manipulação de Strings**
-No Python, quando queremos exibir uma mensagem no terminal, usamos o comando **print()**.
-Barra invertida e a letra "N" minúscula (**\n**) para pular uma linha.
-Recebendo dados com **input()**.
-Não precisamos informar explicitamente o tipo de variável que estamos definindo.
-
-Na convenção do Python, existem momentos em que escrevemos com diferentes nomenclaturas:
-- snake_case: usado para definir variáveis, funções e métodos;
-- PascalCase: usado para definir classes;
-- SCREAMING_SNAKE_CASE: usado para definir constantes.
-
-O camelCase é muito usado no JavaScript, onde a primeira letra da primeira palavra é minúscula e todas as primeiras letras das próximas palavras são maiúsculas. Python não utiliza esse padrão.
-Interpolar um texto com variáveis usando f-string.
-
-**02. Módulos e funções**
-Condicionais **If Elif Else**
-Criando funções: é um bloco de código, que vai realizar uma determinada ação.
-Import de bibliotecas
-Instrução Match
-
-**03. Listas, laços e exceções**
-Try except
-Listas x Tuplas
-Laços de repetição com For While
-Refatoração do código
-Dicionários
-
-
+### 03 - Nível 3: Avançado
+- [ ] **DDD em Python:** Modelagem e arquitetura
+- [ ] **Padrões de Integração em Sistemas Distribuídos**
+- [ ] **Mensageria:** RabbitMQ
+- [ ] **Mensageria:** Kafka
+- [ ] **Python:** Otimização e integração com C
+- [ ] **Kubernetes:** Pods, Services e ConfigMaps
+- [ ] **Kubernetes:** Deployments e Escalabilidade
+- [ ] **Kubernetes:** LivenessProbe
+- [ ] **Kubernetes:** Microsserviços
+- [ ] **Kubernetes:** Helm Charts
+- [ ] **Kubernetes:** Istio
+- [ ] **Integração Contínua no Kubernetes**
