@@ -1,3 +1,21 @@
+# 🚀 Carreira: Desenvolvimento Back-End Python (Alura)
+
+Este repositório é o meu **Diário de Estudos oficial** da formação da Alura. Aqui documento toda a minha evolução, desde os fundamentos até a criação de sistemas complexos.
+
+> **Intro:** Domine o back-end com Python: crie APIs com Django, FastAPI e Flask, aplique arquitetura, trabalhe com CI/CD e enfrente desafios reais do mercado.
+
+---
+
+### 📂 Sobre este Repositório
+O objetivo deste espaço é manter um registro público do meu aprendizado técnico. Ele está organizado por níveis de conhecimento, seguindo a trilha da formação:
+
+* **00-base-programacao:** Lógica, pensamento computacional e fundamentos da linguagem Python.
+* **01-nivel-python-backend:** Orientação a Objetos, bibliotecas padrão e frameworks iniciais.
+* **02-nivel-intermediario:** APIs REST, Bancos de Dados, Docker e Integração Contínua.
+* **03-nivel-avancado:** Arquitetura de sistemas (DDD), Microsserviços e Kubernetes.
+
+---
+
 ## 🏁 Checklist de Progresso: Carreira Back-End Python
 
 ### 00 - Base de Programação
